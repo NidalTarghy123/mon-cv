@@ -86,3 +86,57 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+/* Ajustement pour tablettes */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr; /* Une seule colonne sur tablette */
+        padding: 0 20px; /* Réduction du padding horizontal */
+    }
+
+    .rectangle {
+        width: 100%; /* Prend toute la largeur */
+        max-width: 400px; /* Largeur maximale pour éviter un affichage trop large */
+        height: auto; /* Ajustement de la hauteur selon le contenu */
+    }
+
+    .rectangle h2 {
+        font-size: 20px; /* Taille des titres réduite */
+    }
+
+    .rectangle p {
+        font-size: 12px; /* Réduction de la taille du texte */
+    }
+}
+
+/* Ajustement pour téléphones */
+@media (max-width: 480px) {
+    .grid {
+        padding: 0 10px; /* Padding réduit pour les petits écrans */
+    }
+
+    header h1 {
+        font-size: 28px; /* Réduction de la taille du titre */
+    }
+
+    .rectangle {
+        width: 100%; /* Largeur complète */
+        padding: 10px; /* Espacement interne ajusté */
+    }
+
+    .rectangle h2 {
+        font-size: 18px;
+    }
+
+    .rectangle p {
+        font-size: 12px;
+    }
+
+    footer {
+        justify-content: center; /* Bouton centré */
+    }
+
+    .prev-button {
+        font-size: 14px;
+        padding: 8px 12px; /* Bouton plus petit */
+    }
+}

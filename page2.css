@@ -83,3 +83,56 @@ h2 {
 .next-button {
     margin-right: 0;
 }
+/* Responsive Design pour les tablettes */
+@media (max-width: 768px) {
+    .content-box {
+        flex-direction: column; /* Les boîtes passent en colonne */
+        gap: 20px; /* Espacement réduit entre les boîtes */
+    }
+
+    .info-box, .objectives-box {
+        width: 100%; /* Les boîtes prennent toute la largeur */
+        height: auto; /* Hauteur ajustée automatiquement */
+        padding: 15px; /* Espacement interne réduit */
+    }
+
+    h2 {
+        font-size: 24px; /* Taille des titres réduite */
+    }
+
+    .prev-button, .next-button {
+        font-size: 16px; /* Taille réduite des boutons */
+        padding: 8px 16px;
+    }
+}
+
+/* Responsive Design pour les téléphones */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 28px; /* Taille du titre ajustée */
+    }
+
+    .info-box, .objectives-box {
+        padding: 10px; /* Moins d'espace interne */
+        border-radius: 5px; /* Bordures plus douces */
+    }
+
+    h2 {
+        font-size: 20px; /* Réduction des titres */
+    }
+
+    ul {
+        font-size: 14px; /* Taille de texte plus petite */
+    }
+
+    .prev-button, .next-button {
+        font-size: 14px; /* Taille réduite des boutons */
+        padding: 6px 12px;
+    }
+
+    .navigation {
+        flex-direction: column; /* Les boutons passent en colonne */
+        align-items: center; /* Alignement centré */
+        gap: 10px;
+    }
+}
